@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="22f97888-0a10-4ede-9d2c-6350d6805899" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatagramTimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datagram/DatagramTimeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DatagramTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Datagram/DatagramTimeServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EchoClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sockets/EchoClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/EchoServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sockets/EchoServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DatagramTimeClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DatagramTimeServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EchoClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/EchoServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultados.html" beforeDir="false" afterPath="$PROJECT_DIR$/resultados.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/URLReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/URLReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HttpServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HttpServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/URLReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/URLReader.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/URLReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="94">
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RMI/EchoServerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="136">
               <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -70,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/RMI/EchoClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -85,11 +83,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/HttpServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="196">
+              <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -146,16 +153,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/URLReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/EchoClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/EchoServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/HttpServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatagramTimeClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/DatagramTimeServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/RMI/EchoServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/RMI/EchoServerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/RMI/EchoClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/URLReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/HttpServer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -180,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,29 +221,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="RMI" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ClientesYServidores" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClientesYServidores" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ClientesYServidores" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ClientesYServidores" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548967141079" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548986976395" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -253,16 +249,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EchoServerImpl">
+  <component name="RunManager" selected="Application.HttpServer">
     <configuration name="DatagramTimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Datagram.DatagramTimeClient" />
-      <module name="ClientesYServicios" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatagramTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Datagram.DatagramTimeServer" />
       <module name="ClientesYServicios" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -301,13 +290,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="URLReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="URLReader" />
+      <module name="ClientesYServicios" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HttpServer" />
+        <item itemvalue="Application.URLReader" />
         <item itemvalue="Application.EchoServerImpl" />
         <item itemvalue="Application.EchoClient (1)" />
         <item itemvalue="Application.DatagramTimeClient" />
-        <item itemvalue="Application.DatagramTimeServer" />
-        <item itemvalue="Application.HttpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -323,17 +319,19 @@
       <updated>1548770096750</updated>
       <workItem from="1548806116148" duration="4463000" />
       <workItem from="1548959824122" duration="2812000" />
-      <workItem from="1548964943331" duration="2078000" />
+      <workItem from="1548964943331" duration="2687000" />
+      <workItem from="1548984733963" duration="1831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9353000" />
+    <option name="totallyTimeSpent" value="11793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2655068" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -368,24 +366,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/EchoClient.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/URLReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Sockets/EchoServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -406,10 +387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/HttpServer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/RMI/EchoServerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="136">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -446,16 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/RMI/EchoServerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/RMI/EchoClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -463,6 +434,33 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/URLReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/HttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="43" column="48" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
         </state>
       </provider>
     </entry>

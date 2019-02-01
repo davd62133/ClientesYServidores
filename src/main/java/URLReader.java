@@ -28,7 +28,7 @@ public class URLReader {
             }catch (IOException x) {
                 System.err.println(x);
             }
-        String ruta = "/home/2123162/IdeaProjects/ClientesYServicios/resultados.html";
+        String ruta = "./resultados.html";
         File file = new File(ruta);
         if(!file.exists()) {
             file.createNewFile();
