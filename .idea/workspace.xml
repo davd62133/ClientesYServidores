@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22f97888-0a10-4ede-9d2c-6350d6805899" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ClientesYServicios-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ClientesYServicios-1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MultiThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/heroku/app/target/ClientesYServicios-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/heroku/app/target/ClientesYServicios-1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/heroku/app/target/classes/MultiThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/heroku/app/target/classes/MultiThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/heroku/app/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/heroku/app/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/heroku/build.tgz" beforeDir="false" afterPath="$PROJECT_DIR$/target/heroku/build.tgz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-    </list>
+    <list default="true" id="22f97888-0a10-4ede-9d2c-6350d6805899" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="213">
+              <caret line="29" column="94" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -232,7 +222,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549137942845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549138836337" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -322,12 +312,12 @@
       <workItem from="1548959824122" duration="2812000" />
       <workItem from="1548964943331" duration="2687000" />
       <workItem from="1548984733963" duration="2537000" />
-      <workItem from="1549124020684" duration="11513000" />
+      <workItem from="1549124020684" duration="11776000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24012000" />
+    <option name="totallyTimeSpent" value="24275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -460,8 +450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="213">
+          <caret line="29" column="94" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="94" />
         </state>
       </provider>
     </entry>
