@@ -1,3 +1,4 @@
+MultiThread.class
 URLReader.class
 RMI\EchoServerImpl.class
 Datagram\DatagramTimeClient.class

@@ -19,8 +19,7 @@ import java.rmi.registry.Registry;
         }
 
         public static void main(String[] args){
-            System.setProperty("java.security.policy","file:./java.policy");
             EchoClient ec = new EchoClient();
-                ec.ejecutaServicio("127.0.0.1", 23000, "echoServer");
+            ec.ejecutaServicio("127.0.0.1", 23000, "echoServer");
             }
 }

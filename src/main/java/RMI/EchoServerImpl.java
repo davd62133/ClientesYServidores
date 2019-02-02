@@ -9,7 +9,6 @@ public class EchoServerImpl implements EchoServer{
 
     public EchoServerImpl(String ipRMIregistry,
         int puertoRMIregistry, String nombreDePublicacion){
-        System.setProperty("java.security.policy","file:./java.policy");
         if (System.getSecurityManager() == null) {
             System.setSecurityManager(new SecurityManager());
         }
@@ -19,7 +18,7 @@ public class EchoServerImpl implements EchoServer{
             Registry registry = LocateRegistry.getRegistry(ipRMIregistry, puertoRMIregistry);
             registry.rebind(nombreDePublicacion, echoServer);
             System.out.println("Sockets server ready...");
-            } catch (Exception e) {
+        } catch (Exception e) {
             System.err.println("Sockets server exception:");
             e.printStackTrace();
         }
