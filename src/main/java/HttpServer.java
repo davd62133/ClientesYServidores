@@ -1,10 +1,10 @@
 import java.net.*;
 import java.io.*;
+import java.nio.file.Files;
 
 public class HttpServer {
 public static void main(String[] args) throws IOException {
-    while (true) {
-    ServerSocket serverSocket = null;
+        ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(35000);
         } catch (IOException e) {
@@ -13,43 +13,77 @@ public static void main(String[] args) throws IOException {
         }
 
         Socket clientSocket = null;
-        try {
-            System.out.println("Listo para recibir ...");
-            clientSocket = serverSocket.accept();
-        } catch (IOException e) {
-            System.err.println("Accept failed.");
-            System.exit(1);
-        }
-        PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-        BufferedReader in = new BufferedReader(
-                new InputStreamReader(
-                        clientSocket.getInputStream()));
-        String inputLine, outputLine;
-        while ((inputLine = in.readLine()) != null) {
-            System.out.println("Received: " + inputLine);
-            if (!in.ready()) {
-                break;
+        while (true) {
+            try {
+                System.out.println("Listo para recibir ...");
+                clientSocket = serverSocket.accept();
+            } catch (IOException e) {
+                System.err.println("Accept failed.");
+                System.exit(1);
             }
+            MultiThread multiThread = new MultiThread(clientSocket);
+            multiThread.start();
         }
-        outputLine = "HTTP/1.1 200 OK\r\n"
-                + "Content-Type: text/html\r\n"
-                + "\r\n"
-                + "<!DOCTYPE html>\n"
-                + "<html>\n"
-                + "<head>\n"
-                + "<meta charset=\"UTF-8\">\n"
-                + "<title>Title of the document</title>\n"
-                + "</head>\n"
-                + "<body>\n"
-                + "<h1>Mi propio mensaje</h1>\n"
-                + "</body>\n"
-                + "</html>\n" + inputLine;
-        out.println(outputLine);
-
-        out.close();
-        in.close();
-        clientSocket.close();
-        serverSocket.close();
     }
 }
+
+class MultiThread extends Thread{
+    Socket socket;
+    public MultiThread(Socket socket){
+        this.socket = socket;
+    }
+    @Override
+    public void run(){
+        try {
+            BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            String inputLine = in.readLine();
+            String outputLine;
+            String format;
+            String result;
+            byte[] bytes = null;
+            if (inputLine != null) {
+                inputLine = inputLine.split(" ")[1];
+                if (inputLine.endsWith(".html")) {
+                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    result = "" + bytes.length;
+                    format = "text/html";
+                } else if (inputLine.endsWith(".png")) {
+                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    result = "" + bytes.length;
+                    format = "image/png";
+                } else if(inputLine.endsWith(".jpg")){
+                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    result = "" + bytes.length;
+                    format = "image/jpg";
+                }else {
+                    bytes = Files.readAllBytes(new File("./index.html").toPath());
+                    result = "" + bytes.length;
+                    format = "text/html";
+                }
+            } else {
+                bytes = Files.readAllBytes(new File("./index.html").toPath());
+                result = "" + bytes.length;
+                format = "text/html";
+            }
+            outputLine = "HTTP/1.1 200 OK\r\n"
+                    + "Content-Type: "
+                    + format
+                    + "\r\n"
+                    + result
+                    + "\r\n\r\n";
+
+            byte[] hByte = outputLine.getBytes();
+            byte[] rta = new byte[bytes.length + hByte.length];
+            for (int i = 0; i < hByte.length; i++) {
+                rta[i] = hByte[i];
+            }
+            for (int i = hByte.length; i < hByte.length + bytes.length; i++) {
+                rta[i] = bytes[i - hByte.length];
+            }
+            socket.getOutputStream().write(rta);
+            socket.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
