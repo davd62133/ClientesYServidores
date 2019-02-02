@@ -44,24 +44,24 @@ class MultiThread extends Thread{
             if (inputLine != null) {
                 inputLine = inputLine.split(" ")[1];
                 if (inputLine.endsWith(".html")) {
-                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
                     result = "" + bytes.length;
                     format = "text/html";
                 } else if (inputLine.endsWith(".png")) {
-                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
                     result = "" + bytes.length;
                     format = "image/png";
                 } else if(inputLine.endsWith(".jpg")){
-                    bytes = Files.readAllBytes(new File("./" + inputLine).toPath());
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
                     result = "" + bytes.length;
                     format = "image/jpg";
                 }else {
-                    bytes = Files.readAllBytes(new File("./index.html").toPath());
+                    bytes = Files.readAllBytes(new File("public/index.html").toPath());
                     result = "" + bytes.length;
                     format = "text/html";
                 }
             } else {
-                bytes = Files.readAllBytes(new File("./index.html").toPath());
+                bytes = Files.readAllBytes(new File("public/index.html").toPath());
                 result = "" + bytes.length;
                 format = "text/html";
             }
