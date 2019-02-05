@@ -18,12 +18,12 @@ public static void main(String[] args) throws IOException {
             try {
                 System.out.println("Listo para recibir ...");
                 clientSocket = serverSocket.accept();
+		MultiThread multiThread = new MultiThread(clientSocket);
+	        multiThread.start();
             } catch (IOException e) {
-                System.err.println("Accept failed.");
-                System.exit(1);
+                System.err.println("Accept failed.");               
             }
-            MultiThread multiThread = new MultiThread(clientSocket);
-            multiThread.start();
+            
         }
     }
 }
@@ -97,7 +97,7 @@ class MultiThread extends Thread{
             outputLine = "HTTP/1.1 200 OK\r\n"
                     + "Content-Type: "
                     + format
-                    + "\r\n"
+                    + "\r\n\r\n"
                     + result
                     + "\r\n\r\n";
 
