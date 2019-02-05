@@ -4,7 +4,7 @@ import java.nio.file.Files;
 
 public class HttpServer {
 public static void main(String[] args) throws IOException {
-        System.out.println(MultiThread.getResource("descarga.png"));
+        //System.out.println(MultiThread.getResource("descarga.png"));
         ServerSocket serverSocket = null;
         try {
             serverSocket = new ServerSocket(new Integer(System.getenv("PORT")));
@@ -66,31 +66,31 @@ class MultiThread extends Thread{
                 if (inputLine.endsWith(".html")) {
                     //File file = new File("public/" + inputLine);
                     //FileInputStream fis = new FileInputStream(file);
-                    //bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
                     //bytes = MultiThread.class.getResourceAsStream("/public/" + inputLine).;
-                    bytes = getResource(inputLine).getBytes();
+                    //bytes = getResource(inputLine).getBytes();
                     //bytes = Files.readAllBytes(fis.)
                     result = "" + bytes.length;
                     format = "text/html";
                 } else if (inputLine.endsWith(".png")) {
-                    //bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
-                    bytes = getResource(inputLine.replace("/","")).getBytes();
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
+                    //bytes = getResource(inputLine.replace("/","")).getBytes();
                     result = "" + bytes.length;
                     format = "image/png";
                 } else if(inputLine.endsWith(".jpg")){
-                    //bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
-                    bytes = getResource(inputLine.replace("/","")).getBytes();
+                    bytes = Files.readAllBytes(new File("public/" + inputLine).toPath());
+                    //bytes = getResource(inputLine.replace("/","")).getBytes();
                     result = "" + bytes.length;
                     format = "image/jpg";
                 }else {
-                    //bytes = Files.readAllBytes(new File("public/index.html").toPath());
-                    bytes = getResource("index.html").getBytes();
+                    bytes = Files.readAllBytes(new File("public/index.html").toPath());
+                    //bytes = getResource("index.html").getBytes();
                     result = "" + bytes.length;
                     format = "text/html";
                 }
             } else {
-                //bytes = Files.readAllBytes(new File("public/index.html").toPath());
-                bytes = getResource("index.html").getBytes();
+                bytes = Files.readAllBytes(new File("public/index.html").toPath());
+                //bytes = getResource("index.html").getBytes();
                 result = "" + bytes.length;
                 format = "text/html";
             }
